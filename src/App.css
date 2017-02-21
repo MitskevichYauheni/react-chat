@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  background: #eeeeee;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 760px;
+  box-shadow: 0px 3px 5px 0 rgba(174,174,174,0.5)
+}
+.section{
+  height: 349px;
+  padding: 17px 17px;
+  background: #fff;
+}
+.head{
+  min-height: 34px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #464646;
+  border-bottom: 1px solid #ededed;
+}
+.messages{
+  overflow: auto;
+  height: 349px;
+}
+.message{
+  display: flex;
+  margin: 20px 0;
+}
+.form-add{
+  display: flex;
+  background: #eeeeee;
+  padding: 17px;
+  border-top: 1px solid #d8d8d8;
+}
+.form-add__text{
+  display: block;
+  max-height: 20px;
+  border: 1px solid #d8d8d8;
+  color: #34495e;
+  font-size: 15px;
+  padding: 8px 10px;
+  margin: 0;
+
+  width: 100%;
+  background-color: #fff;
+}
+.form-add__btn{
+  background-color: #5677fc;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: none;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 13px;
+  margin-left: 15px;
+  border: 0;
+}
+.form-add__btn:hover, .form-add__btn:disabled{
+  background-color: #738efa;
+}
+.avatar a{
+  cursor: pointer;
+}
+.avatar__img{
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+.info {
+  width: 90%;
+  margin-left: 20px;
+}
+.info__author{
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.info__author:hover{
+  text-decoration: underline;
+}
+.font-message{
+  word-break: break-word;
+  font-size: 15px;
+}
+.info__author, .info__message{
+  margin: 0;
+}
