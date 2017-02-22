@@ -27,13 +27,13 @@ class Home extends React.Component {
         console.log(authResult)
           this.setState({messages: authResult.messages})
         }),
-   2000);
+    2000);
   }
   render() {
     console.log('render');
     return (
       <div className='app'>
-        <Chat data={this.state.messages} />
+        <Chat data={this.state.messages} interlocutor={'Александр'}/>
         <Add update={this.update.bind(this)} author={'Евгений'} />
       </div>
     );

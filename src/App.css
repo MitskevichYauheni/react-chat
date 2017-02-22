@@ -1,3 +1,7 @@
+.none {
+  display: none !important;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +12,7 @@ body {
 .app {
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
+  margin: 70px auto;
   width: 760px;
   box-shadow: 0px 3px 5px 0 rgba(174,174,174,0.5)
 }
@@ -17,19 +21,72 @@ body {
   padding: 17px 17px;
   background: #fff;
 }
-.head{
+.header{
+  display: flex;
+  justify-content: space-between;
   min-height: 34px;
+  border-bottom: 1px solid #ededed;
+}
+.header-info{
+  display: flex;
+}
+.header-info__h4, .header-info__interlocutor{
   font-size: 17px;
   font-weight: bold;
   color: #464646;
-  border-bottom: 1px solid #ededed;
+  margin: 0;
+}
+.header-info__interlocutor{
+  color: #1463d9;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 7px;
+}
+.header-info__interlocutor:hover{
+  text-decoration: underline;
+}
+.header-capabilities{
+  position: relative;
+}
+.header-capabilities__open{
+  position: relative;
+  bottom: 10px;
+  cursor: pointer;
+  color: #949090;
+  font-size: 26px;
+  font-weight: bold;
+}
+.header-capabilities__window{
+  position: absolute;
+  top: 30px;
+  right: -7px;
+  background: #fff;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px 0 rgba(174,174,174,0.5);
+  z-index: 1;
+}
+.header-capabilities__window__link{
+  display: block;
+  margin: 0;
+  padding: 9px 17px;
+  color: #464646;
+  font-weight: bold;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header-capabilities__window__link:hover{
+  color: #fff;
+  background: #5677fc;
 }
 .messages{
   overflow: auto;
-  height: 349px;
+  height: 330px;
 }
 .message{
   display: flex;
+  word-wrap: break-word;
   margin: 20px 0;
 }
 .form-add{
@@ -40,7 +97,7 @@ body {
 }
 .form-add__text{
   display: block;
-  max-height: 20px;
+  max-height: 19px;
   border: 1px solid #d8d8d8;
   color: #34495e;
   font-size: 15px;
