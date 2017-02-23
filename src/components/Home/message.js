@@ -14,7 +14,7 @@ class Message extends React.Component {
           </a>
         </div>
         <div className= 'info'>
-          <a className='info__author'>{author}: </a>
+          <a className='info__author'>{author} </a>
           <p className='info__message'>{message}</p>
         </div>
       </div>
