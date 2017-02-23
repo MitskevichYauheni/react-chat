@@ -44,7 +44,7 @@ class Chat extends React.Component {
         )
       })
     } else {
-      messageTemplate = <p>К сожалению сообщений нет</p>
+      messageTemplate = <p className='messages__no-messages'>К сожалению сообщений нет</p>
     }
 
     return (
