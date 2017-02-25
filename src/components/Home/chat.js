@@ -31,7 +31,7 @@ class Chat extends React.Component {
   }
   render() {
     let data = this.props.data,
-         author = this.props.author,
+         interlocutor = this.props.interlocutor,
          visible = this.state.visible,
          messageTemplate;
 
@@ -48,12 +48,12 @@ class Chat extends React.Component {
     }
 
     return (
-      <div className = 'section'>
+      <div className='section'>
         <div className='header'>
           <div className='header-info'>
             <h4 className='header-info__h4'>Переписка с пользователем </h4>
             <a className='header-info__interlocutor'>
-              {this.props.interlocutor}
+              {interlocutor}
             </a>
           </div>
           <div className='header-capabilities'>
@@ -77,7 +77,7 @@ class Chat extends React.Component {
 
 Chat.propTypes = {
   data: React.PropTypes.array.isRequired,
-  interlocutor: React.PropTypes.string.isRequired
+  interlocutor:  React.PropTypes.string.isRequired
 }
 
 export default Chat;

@@ -4,8 +4,6 @@ class Add extends React.Component {
   constructor(){
     super();
     this.state = {
-      agreeNotChecked: true,
-      authorIsEmpty: true,
       textIsEmpty: true
     };
     this.onBtnClickHandler = this.onBtnClickHandler.bind(this);
@@ -46,9 +44,7 @@ class Add extends React.Component {
     }
   }
   render() {
-    var agreeNotChecked = this.state.agreeNotChecked,
-        authorIsEmpty = this.state.authorIsEmpty,
-        textIsEmpty = this.state.textIsEmpty;
+    let textIsEmpty = this.state.textIsEmpty;
     return (
       <form className='form-add'>
         <textarea
@@ -71,7 +67,8 @@ class Add extends React.Component {
 };
 
 Add.propTypes = {
-  author: React.PropTypes.string.isRequired
+  author: React.PropTypes.string.isRequired,
+  update: React.PropTypes.func.isRequired
 }
 
 export default Add;

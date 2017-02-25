@@ -8,12 +8,12 @@ class Message extends React.Component {
 
     return (
       <div className='message'>
-        <div className = 'avatar'>
+        <div className='avatar'>
           <a>
             <img  className='avatar__img' alt='avatar' src={avatar} />
           </a>
         </div>
-        <div className= 'info'>
+        <div className='info'>
           <a className='info__author'>{author} </a>
           <p className='info__message'>{message}</p>
         </div>
